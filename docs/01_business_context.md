@@ -1,20 +1,12 @@
 # Business Context
 
-This project simulates an energy company scenario focused on market intelligence and operations.
+This project is a Vattenfall-inspired energy operations and market intelligence lakehouse.
 
-## Data Sources
+## Domains:
+- Energy market prices
+- Weather data
+- Grid events and telemetry
+- Reference asset data
 
-* Energy market price data
-* Weather observations
-* Grid telemetry and incidents
-* Reference datasets
-
-## Objective
-
-To build a data platform that enables better decision-making through structured and reliable data.
-
-## Business Value
-
-* Improved operational visibility
-* Better forecasting capabilities
-* Data-driven decision support
+## Goal:
+Build a governed lakehouse that processes raw energy data into analytics-ready datasets using a bronze, silver, and gold architecture.
