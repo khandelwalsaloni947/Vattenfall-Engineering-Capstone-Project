@@ -4,10 +4,16 @@ theme: energy_operations_and_market_intelligence_capstone
 catalog: vattenfall_dev
 
 schemas:
-  raw: raw
-  refined: refined
-  analytics: analytics
+  bronze: bronze
+  silver: silver
+  gold: gold
 
 volumes:
   landing: landing
   checkpoints: checkpoints
+
+domains:
+  - market_prices
+  - weather
+  - grid_events
+  - reference
