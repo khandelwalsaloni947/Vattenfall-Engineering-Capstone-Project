@@ -4,9 +4,9 @@ theme: energy_operations_and_market_intelligence_capstone
 catalog: vattenfall_dev
 
 schemas:
-  bronze: bronze
-  silver: silver
-  gold: gold
+  raw: raw
+  refined: refined
+  analytics: analytics
 
 volumes:
   landing: landing
