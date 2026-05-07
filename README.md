@@ -69,5 +69,68 @@ Implemented Bronze ingestion pipelines for all domains
 
 
 
+# Day 3 Submission — Silver Layer Build
+
+## Completed Work
+
+Today’s work focused on building the Silver layer from Bronze data across multiple domains:
+
+### Silver Tables Created
+- silver_market_prices
+- silver_weather
+- silver_grid_events
+- silver_asset_reference
+- silver_regional_operations_base (integrated dataset)
+
+---
+
+## Key Transformations Performed
+
+- Cleaned and standardized raw Bronze datasets
+- Fixed data types (timestamps, dates, numeric fields)
+- Removed `_rescued_data` and irrelevant columns
+- Normalized categorical fields (region, severity, event_type)
+- Created derived fields like:
+  - event_day
+  - severity_band (UDF-based classification)
+- Ensured consistent join keys (asset_id, region)
+
+---
+
+## Integrated Dataset
+
+`siver_regional_operations_base` combines:
+- Grid events
+- Asset reference data
+- Regional context
+
+It enables cross-domain analysis such as:
+- Asset failure tracking
+- Regional operational risk analysis
+- Event severity impact assessment
+
+---
+
+## Validation Performed
+
+- Row count checks across all Silver tables
+- Null value validation on key columns
+- Schema inspection for consistency
+- Join validation between grid events and assets
+- Sample data verification
+
+---
+
+## Outcome
+
+The Silver layer is now:
+- Clean
+- Consistent
+- Join-ready
+- Analytics-ready
+
+This completes Day 3 milestone successfully.
+
+
 
 ---
