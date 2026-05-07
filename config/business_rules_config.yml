@@ -1,0 +1,7 @@
+business_rules:
+  high_market_price_threshold: 75
+  elevated_wind_speed_threshold: 30
+  elevated_incident_severity:
+    - HIGH
+    - CRITICAL
+  long_incident_duration_minutes: 60
